@@ -1,0 +1,19 @@
+{
+    "name": "subbo-extension",
+    "version": "0.1.0",
+    "private": true,
+    "description": "A starter template for Sunder applications on Cloudflare Workers",
+    "type": "module",
+    "scripts": {
+       "build": "cp manifest.json dist/manifest.json && npm run build:scripts",
+       "build:scripts": "esbuild src/subboBackground.ts src/subboHost.ts src/subboExtension.ts --bundle --outdir=dist --platform=neutral --target=es2020"
+    },
+    "main": "dist/index.mjs",
+    "devDependencies": {
+        "esbuild": "^0.14.10",
+        "@types/chrome": "0.0.175"
+
+    },
+    "dependencies": {
+    }
+}

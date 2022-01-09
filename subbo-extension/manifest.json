@@ -1,0 +1,41 @@
+{
+    "name": "subbo",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "subboBackground.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.videoland.com/player/*"
+            ],
+            "js": [
+                "subboExtension.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://www.videoland.com/"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "subboHost.js"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "externally_connectable": {
+        "matches": [
+            "https://*.videoland.com/player/*"
+        ]
+    }
+}

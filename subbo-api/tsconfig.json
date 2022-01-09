@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "lib": [
+            "esnext"
+        ],
+        "types": [
+            "@cloudflare/workers-types"
+        ],
+        "moduleResolution": "node",
+        "strict": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "declaration": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "noEmitHelpers": true
+    },
+    "include": [
+        "src/**/*",
+        "bindings.d.ts"
+    ]
+}
