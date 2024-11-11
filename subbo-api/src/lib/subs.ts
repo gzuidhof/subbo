@@ -1,7 +1,8 @@
 import { SupportedLanguage } from "./types";
 import { restoreShortenedVTTAfterTranslation, shortenVTTForTranslation } from "./vtt";
 
-const DEEPL_TRANSLATE_API_URL = "https://api.deepl.com/v2/translate";
+// Change to `api.deepl.com` for the paid API
+const DEEPL_TRANSLATE_API_URL = "https://api-free.deepl.com/v2/translate";
 
 export interface DeepLResponse {
     translations: {detected_source_language: string, text: string}[]
@@ -44,6 +45,7 @@ export class SubsTranslator {
             // console.error(e);
             throw e;
         }
+        console.log(respJson);
         return restoreShortenedVTTAfterTranslation(respJson.translations[0].text.replace("\r\n", "\n"), shorten.timings);
     }
 

@@ -2,9 +2,9 @@ import { getSubsCacheForPageURL, putSubsCacheForPageURL } from "./cache";
 import { DEFAULT_TARGET_LANGUAGE } from "./constants";
 import { ContentDataWithPageInfo, MESSAGE_TYPE_SUBBO_RECEIVE_ORIGINAL_SUBS, SubboReceiveOriginalSubsMessage, SubsRequest, SubsResponse, SupportedLanguage } from "./types";
 
-const AUTH_TOKEN = "pPpmC4JYq9aSj7ERLpRHHpZvR649MnhJyN3B";
-const API_URL = "https://subbo-api.guido.workers.dev";
-// const API_URL = "http://localhost:8787"
+const AUTH_TOKEN = "DUMMY_AUTH_TOKEN";
+// const API_URL = "https://subbo-api.guido.workers.dev";
+const API_URL = "http://localhost:8787"
 const SUBS_API_ENDPOINT = "/api/v1/subs";
 
 async function getSubsForPage(content: ContentDataWithPageInfo, targetLanguage: SupportedLanguage) {

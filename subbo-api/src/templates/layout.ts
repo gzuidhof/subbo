@@ -12,7 +12,7 @@ export function basicLayout(htmlTemplateData: HTMLTemplateData): HTMLTemplateDat
 
     const bodyInLayout = html`
         <header>
-            <h1>{{ project-name }}</h1>
+            <h1>Subbo</h1>
         </header>
         <nav>
         <ul>
@@ -22,7 +22,7 @@ export function basicLayout(htmlTemplateData: HTMLTemplateData): HTMLTemplateDat
         ${htmlTemplateData.body}
         <footer>
             <p>
-            <a href="/">{{ project-name }}</a>
+            <a href="/">Subbo</a>
             | <a href="https://sunderjs.com/docs">Sunder Documentation</a>
             | <a href="https://github.com/gzuidhof/sunder-worker-template">Template readme</a></p>
         </footer>`

@@ -8,7 +8,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://*.videoland.com/player/*"
+                "https://*.videoland.com/player/*",
+                "https://npo.nl/*"
             ],
             "js": [
                 "subboExtension.js"
@@ -21,7 +22,8 @@
         "storage"
     ],
     "host_permissions": [
-        "http://www.videoland.com/"
+        "http://www.videoland.com/",
+        "https://npo.nl/"
     ],
     "web_accessible_resources": [
         {
@@ -35,7 +37,8 @@
     ],
     "externally_connectable": {
         "matches": [
-            "https://*.videoland.com/player/*"
+            "https://*.videoland.com/player/*",
+            "https://npo.nl/*"
         ]
     }
 }

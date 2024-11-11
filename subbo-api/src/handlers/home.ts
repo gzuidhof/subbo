@@ -6,9 +6,9 @@ import { basicLayout } from "../templates/layout";
 
 export async function homeHandler(ctx: Context) {
     const pageData: HTMLTemplateData = {
-        title: "{{ project-name }}",
+        title: "Subbo",
         body: html`
-            <p>Welcome to the <strong>Sunder</strong> Starter template.</p>
+            <p>Welcome to <strong>Subbo</strong>.</p>
 
             <blockquote>
                 <p>

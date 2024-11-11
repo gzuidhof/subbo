@@ -3,10 +3,14 @@
 compatibility_date = "2021-11-25"
 
 type = "javascript"
-name = "{{ project-name }}"
+name = "subbo"
 account_id = ""
 workers_dev = true
 zone_id = ""
+
+kv_namespaces = [
+  { binding = "SUBBO_SUBS_CACHE", id = "your_kv_namespace_id" }
+]
 
 [site]
 entry-point = "./"
@@ -18,3 +22,6 @@ command = "npm run build:nocleanup"
 [build.upload]
 format = "modules"
 main = "index.mjs"
+
+[vars]
+DEEPL_AUTH_KEY = "your_auth_key"

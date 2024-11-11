@@ -1,6 +1,6 @@
 import { SubsResponse, SupportedLanguage } from "./types";
 
-const SUBS_STORAGE_PREFIX = "SUBBO_SUB_V10"
+const SUBS_STORAGE_PREFIX = "SUBBO_SUB_V11"
 
 function isEmptyObject(obj: any): boolean {
     return obj && Object.keys(obj).length === 0 && Object.getPrototypeOf(obj) === Object.prototype
